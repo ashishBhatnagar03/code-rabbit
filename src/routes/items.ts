@@ -1,6 +1,7 @@
 import { FastifyInstance } from 'fastify'
 import { Type } from '@sinclair/typebox'
 import { ItemSchema, CreateItemSchema, UpdateItemSchema } from '../types/item'
+import crypto from 'node:crypto'
 
 // In-memory storage for demo purposes
 const items = new Map<string, any>()
